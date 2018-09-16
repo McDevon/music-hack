@@ -38,6 +38,13 @@ Reverse every beat in a song:
 
     python3 beatreverse.py -s 1 -i 0 song.mp3
 
+## Swing
+
+Swing is inspired by [swinger.py](https://github.com/echonest/remix/blob/master/tutorial/swinger/swinger.py) script, which relies on libraries that seem to no longer work. It attempts to convert 4/4 songs into swingy 6/8 format. Currently the scripts expects a stereo track.
+
+Usage:
+
+    python3 swing.py song.mp3
 
 ## Notes
 - As Madmom has [some issues](https://github.com/CPJKU/madmom/issues/373) with Python 3.7, all testing has been done using Python 3.66
