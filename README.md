@@ -54,6 +54,14 @@ Replace every tenth beat of song by insert.mp3:
 
     python3 insert.py -s 10 -i 9 song.mp3 insert.mp3
 
+## Speedup
+
+Speedup speeds the song up beat by beat, starting at normal speed and ending up going at double speed at the end of the song.
+
+Usage:
+
+    python3 speedup.py song.mp3
+
 ## Notes
 - As Madmom has [some issues](https://github.com/CPJKU/madmom/issues/373) with Python 3.7, all testing has been done using Python 3.66
 - The scripts currently only support mp3 files for input and output
