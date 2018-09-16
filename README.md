@@ -46,7 +46,15 @@ Usage:
 
     python3 swing.py song.mp3
 
+## Insert
+
+Insert works similarly to beatremove, except it replaces the selected beats instead of removing them. The replace clip is cropped to fit the beat. Usage examples:
+
+Replace every tenth beat of song by insert.mp3:
+
+    python3 insert.py -s 10 -i 9 song.mp3 insert.mp3
+
 ## Notes
 - As Madmom has [some issues](https://github.com/CPJKU/madmom/issues/373) with Python 3.7, all testing has been done using Python 3.66
 - The scripts currently only support mp3 files for input and output
-- There are no proper input checks or errors
+- There are no proper input checks or error messages
