@@ -8,7 +8,7 @@ A collection of scripts for toying around with music files. The scripts rely on 
 
 Following python libraries:
 
-    pip3 install numpy madmom pydup librosa
+    pip3 install cython numpy pydup madmom librosa
 
 ## Beatremove
 
