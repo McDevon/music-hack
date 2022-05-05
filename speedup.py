@@ -1,6 +1,7 @@
 from optparse import OptionParser
 from pydub import AudioSegment
 from pydub.effects import speedup
+import soundfile
 import librosa
 import madmom
 import numpy as np
@@ -55,10 +56,10 @@ def convert(inputFile, outputFile):
 
         allParts.append(stereo_time_stretch(audiosegment_to_ndarray(split)[0], segmentSpeed))
     
-    fullSong = np.concatenate(allParts, 1)
+    fullSong = np.concatenate(allParts, 1).transpose()
 
     # TODO ndarray_to_audiosegment
-    librosa.output.write_wav(wavFileName, fullSong, track.frame_rate)
+    soundfile.write(wavFileName, fullSong, samplerate=44100, subtype='PCM_16')
 
     track = AudioSegment.from_wav(wavFileName)
     track.export(outputFile, format="mp3")
