@@ -101,3 +101,4 @@ Add half-step modulations at beat indices 80, 160, and 240 to a song:
 - There have been issues with Python versions 3.7 and 3.10, docker usage is recommended
 - The scripts currently only support mp3 files for input and output
 - There are no proper input checks or error messages
+- Using an M1 Mac makes building all the dependencies difficult, but the docker image should work just fine
