@@ -2,6 +2,8 @@
 
 A collection of scripts for toying around with music files. The scripts rely on beat detection and audio editing libraries.
 
+This is a toy project of scripts quickly hacked together, not a properly maintained tool or library.
+
 ## Usage
 
 A convenience `Dockerfile` is provided to get the correct versions of Python and all the dependencies.
