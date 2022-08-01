@@ -62,6 +62,14 @@ Reverse every beat in a song:
 
     python beatreverse.py -s 1 -i 0 files/song.mp3
 
+## Reversebeats
+
+Reversebeats reverses the order of the beats in the song, in essence playing it from the end to the beginning, one beat at time:
+
+usage:
+
+    python reversebeats.py files/song.mp3
+
 ## Swing
 
 Swing is inspired by [swinger.py](https://github.com/echonest/remix/blob/master/tutorial/swinger/swinger.py) script, which relies on libraries that seem to no longer work. It attempts to convert 4/4 songs into swingy 6/8 format. Currently the script expects a stereo track.
